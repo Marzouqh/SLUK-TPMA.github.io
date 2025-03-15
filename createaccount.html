@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Create Account - Teaching Practice Management</title>
+  <link href="assets/img/siwes.jpg" rel="icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 130vh;
+      background-color: #f4f4f4;
+      padding: 40px;
+    }
+    .register-container {
+      background: white;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .register-container:hover {
+      transform: scale(1.02);
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+    }
+    .register-container img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+    .register-container h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    .form-control {
+      border-radius: 5px;
+    }
+    .btn-register {
+      width: 100%;
+      background-color: brown;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+      border: noone;
+      border-radius: 5px;
+      transition: background 0.3s ease-in-out;
+    }
+    .btn-register:hover {
+      background-color: darkred;
+    }
+    .links {
+      margin-top: 15px;
+    }
+    .links a {
+      text-decoration: none;
+      color: brown;
+      font-weight: bold;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="register-container">
+    <img src="assets/img/SLUK_Logo1.jfif" alt="SLUK Logo">
+    <h2>Create an Account</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="regNo">Registration Number</label>
+        <input type="text" id="regNo" class="form-control" placeholder="Enter your registration number" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm your password" required>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="gotcha" required> I confirm that I am eligible to register.
+      </div>
+      <button type="submit" class="btn-register">Register</button>
+    </form>
+    <div class="links">
+      <a href="studentlogin.html">Back to Login</a>
+    </div>
+  </div>
+</body>
+</html>

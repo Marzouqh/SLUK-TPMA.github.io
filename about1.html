@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About The TPMA Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+   .description {
+    font-size: 16px;
+    color: #444;
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.description:hover {
+    background: blue;
+    transform: scale(1.02);
+}
+
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007BFF;
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .team {
+            display: none;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile:hover {
+            transform: scale(1.1);
+        }
+
+        .toggle-btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .toggle-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+        <p class="description">The TPMA project is a pioneer domestic application proudly developed at Sule Lamido University, Kafin Hausa, to meet its vision of becoming an ICT-driven university. This project is spearheaded by the Faculty of Education in collaboration with NITDA under the leadership of Kashifu Inuwa.</p>
+    <div class="container">
+        <h1>About The TPMA Project</h1>
+        <button class="toggle-btn" onclick="toggleTeam()">Meet The Team</button>
+        
+        <div class="team" id="teamSection">
+            <table>
+                <tr>
+                    <td>
+                       <img src="C:/Users/USER/Desktop/TPMA/TPMA pics/Dean.Jpg"  width="200" height="150" alt="Dean">
+                        <p><strong>Dr. Ali Abdullahi Taura</strong></p>
+                        <p>The Dean Faculty of EDucation</p>
+                    </td>
+                    <td>
+                        <img src="C:/Users/USER/Desktop/TPMA/TPMA pics/SLUK-VC.Jpg"  width="200" height="150" alt="Dean">
+                        <p><strong>Prof. Muhammad Ibrahim Yakasai</strong></p>
+                        <p>The Vice Chancellor</p>
+                    </td>
+                    <td>
+                       <img src="C:/Users/USER/Desktop/TPMA/TPMA pics/NITDA.JFIF"  width="200" height="150" alt="Dean">
+                        <p><strong>Mal. Kashifu Inuwa Abdullahi CCIE</strong></p>
+                        <p>DG NITDA</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function toggleTeam() {
+            var teamSection = document.getElementById("teamSection");
+            if (teamSection.style.display === "none" || teamSection.style.display === "") {
+                teamSection.style.display = "block";
+            } else {
+                teamSection.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

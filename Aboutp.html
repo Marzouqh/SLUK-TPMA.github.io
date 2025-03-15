@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contact - SLUK TPMA</title>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      transition: background-color 0.3s ease-in-out;
+    }
+    body:hover {
+      background-color: #e0e0e0;
+    }
+    .header {
+      background-color: #d2a679;
+      color: white;
+      padding: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 140%;
+    }
+    .header img {
+      height: 70px;
+    }
+    .header h1 {
+      flex-grow: 1;
+      text-align: center;
+      margin: 0;
+    }
+    .container {
+      margin-top: 30px;
+    }
+    h1 {
+      color: brown;
+      font-size: 32px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .contact-info {
+      margin-top: 20px;
+      font-size: 16px;
+      text-align: center;
+      padding-left: 20px;
+    }
+    .contact-info p {
+      margin: 10px 0;
+    }
+    .contact-info i {
+      margin-right: 10px;
+      color: #d2a679;
+    }
+    .contact-form {
+      margin-top: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+    .contact-form label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .submit-btn {
+      background: #d2a679;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+      display: block;
+      margin: 15px auto;
+      text-align: center;
+    }
+    .submit-btn:hover {
+      background: #b88a60;
+      transform: scale(1.05);
+    }
+    .footer {
+      background-color: #d2a679;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img src="assets/img/SLUK_Logo1.jfif" alt="SLUK Logo">
+    <h1>Sule Lamido University Kafin Hausa - SLUK TPMA</h1>
+  </div>
+  <a href="about1.html">About the Project Team</a>
+
+  <div class="container">
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.482681271678!2d8.513526414791487!3d12.245392991335494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11b19b77e134ce69%3A0x8fcd6f3bfae18b6!2sSule%20Lamido%20University!5e0!3m2!1sen!2sng!4v1619091360194!5m2!1sen!2sng"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="Enter your phone number" required>
+        
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email address" required>
+        
+        <label for="comment">Your Comment</label>
+        <textarea id="comment" placeholder="Enter your comment" rows="4" required></textarea>
+        
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+    
+    <div class="contact-info">
+      <p><i class="bi bi-person-badge"></i> <strong>Teaching Practice Coordinator:</strong> +2348030000612</p>
+      <p><i class="bi bi-person"></i> <strong>Admin:</strong> +2348067322188</p>
+      <p><i class="bi bi-envelope"></i> <strong>Email:</strong> fa@slu.edu.ng</p>
+    </div>
+  </div>
+  
+  <div class="footer">
+    &copy; 2025 Sule Lamido University. All rights reserved.
+  </div>
+</body>
+</html>

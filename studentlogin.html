@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Student Login - Teaching Practice Management</title>
+  <link href="assets/img/siwes.jpg" rel="icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .login-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+    .login-container img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+    .login-container h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    .form-control {
+      border-radius: 5px;
+    }
+    .btn-login {
+      width: 100%;
+      background-color: brown;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      transition: background 0.3s ease-in-out;
+    }
+    .btn-login:hover {
+      background-color: darkred;
+    }
+    .links {
+      margin-top: 15px;
+    }
+    .links a {
+      text-decoration: none;
+      color: brown;
+      font-weight: bold;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="header-title">Teaching Practice Management Application</h1>
+  <div class="login-container">
+    <img src="assets/img/SLUK_Logo1.jfif" alt="SLUK Logo">
+    <h2>Student Login</h2>
+    <form action="studentdashboard.html">
+      <div class="form-group">
+        <label for="regNo">Registration Number</label>
+        <input type="text" id="regNo" class="form-control" placeholder="Enter your registration number" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" class="btn-login">Login</button>
+    </form>
+    <div class="links">
+      <a href="forgetpassword.html">Forgot Password?</a> | <a href="createaccount.html">Create an Account</a>
+    </div>
+  </div>
+</body>
+</html>
